@@ -1,0 +1,66 @@
+.seguro-bg {
+  background: var(--cor-12);
+  box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-00);
+}
+.seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.seguro-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seguro-conteudo {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.seguro h2 {
+  margin-bottom: 32px;
+  line-height: 0.9;
+}
+.seguro p {
+  margin-bottom: 20px;
+}
+.seguro a:hover {
+  background-color: var(--cor-hover);
+}
+@media (max-width: 450px) {
+  .seguro {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .seguro-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .seguro-bg {
+    background: var(--cor-12);
+    box-shadow: inset 0 120px var(--cor-0);
+  }
+  .seguro-imagem img {
+    height: 200px;
+  }
+  .seguro p {
+    font-size: 0.8rem;
+  }
+  .seguro .botao {
+    font-size: 0.7rem;
+    padding: 10px 20px;
+  }
+  .seguro h2 {
+    font-size: 3rem;
+  }
+  .seguro-imagem img {
+    padding-top: 0px;
+  }
+  .ficha-tecnica span {
+    font-size: 10px;
+  }
+  .ficha-tecnica li {
+    font-size: 1rem;
+  }
+}

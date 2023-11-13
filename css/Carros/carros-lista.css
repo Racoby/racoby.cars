@@ -1,0 +1,84 @@
+.carros-lista {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.carros-lista h2 {
+  margin-bottom: 40px;
+}
+.carros-lista img {
+  margin-bottom: 16px;
+  border: 3px solid transparent;
+}
+.carros-lista a {
+  display: block;
+}
+
+.carros-lista ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  overflow-x: auto;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carros-lista li {
+  flex: 1;
+  min-width: 280px;
+}
+
+.carros-lista h3 {
+  display: flex;
+  align-items: center;
+}
+.carros-lista h3::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--cor-det);
+  width: 17px;
+  height: 9px;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+.carros-lista a:hover h3::before {
+  width: 24px;
+}
+.carros-lista ul img:hover {
+  border: 3px solid var(--cor-det);
+}
+.carros-lista li span {
+  padding-left: 20px;
+}
+
+@media (max-width: 837px) {
+  .carros-lista h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 805px) {
+  .carros-lista h3 {
+    font-size: 1.3rem;
+  }
+  .carros-lista li span {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .carros-lista {
+    padding-bottom: 60px;
+  }
+  .carros-lista ul {
+    gap: 20px;
+  }
+  .carros-lista h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .carros-lista h2 {
+    font-size: 38px;
+  }
+}

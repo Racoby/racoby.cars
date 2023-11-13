@@ -1,0 +1,101 @@
+.carro-bg:nth-child(odd) {
+  background: linear-gradient(to right, #ffffff 40%, #0e0e0e 0%);
+}
+
+.carros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url("/svg/top-right.svg") no-repeat top 50px right 40px;
+}
+
+.carros-imagem {
+  position: relative;
+}
+.carros-imagem span {
+  background: var(--cor-12);
+  padding: 8px 16px 8px 8px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  border-radius: 5px;
+}
+
+.carros-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+.carros-conteudo h2,
+.carros-conteudo p {
+  grid-column: 1/-1;
+}
+.carros h2 {
+  margin-bottom: 20px;
+}
+
+.carros h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-det);
+  margin-bottom: 8px;
+}
+.carros p {
+  margin-bottom: 32px;
+}
+
+.carros a:hover {
+  background-color: var(--cor-hover);
+}
+
+.carros-conteudo a {
+  place-self: end;
+}
+.carros li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.carros-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .carros {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .carro-bg:nth-child(odd) {
+    background: #0e0e0e;
+  }
+}
+@media (max-width: 600px) {
+  .carros-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .carros-conteudo ul {
+    max-width: 40px;
+  }
+  .carros-conteudo p {
+    font-size: 17px;
+  }
+  .carros-conteudo li {
+    font-size: 15px;
+  }
+
+  .carros-conteudo a {
+    justify-self: start;
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}

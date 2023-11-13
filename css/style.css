@@ -1,0 +1,42 @@
+@import url("./global.css");
+@import url("./header.css");
+@import url("./footer.css");
+
+/* ultilidades */
+
+@import url("./ultilidades/tipografia.css");
+@import url("./ultilidades/componentes.css");
+@import url("./ultilidades/cores.css");
+@import url("./ultilidades/formulario.css");
+
+/* esta na home */
+@import url("./home/introducao.css");
+@import url("./home/modelo.css");
+@import url("./home/parceiros.css");
+@import url("./home/depoimento.css");
+
+/* carros */
+@import url("./Carros/carros-lista.css");
+@import url("./Carros/carros.css");
+/* carro */
+@import url("./carro/carro.css");
+@import url("./carro/seguro.css");
+
+/* minhas animações */
+@import url("./ultilidades/animacao.css");
+
+/* orçamentos */
+
+@import url("./orcamento/orcamento.css");
+
+/* contato */
+@import url("./contato/contato.css");
+@import url("./contato/lojas.css");
+
+/* Seguros */
+@import url("./seguros/seguros.css");
+@import url("./seguros/vantagens.css");
+@import url("./seguros/perguntas.css");
+
+/* termos e condições */
+@import url("./termos/termos.css");
